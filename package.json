@@ -1,0 +1,27 @@
+{
+  "name": "nodebp-spacegame",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npm run build:css & npm run build:html & wait",
+    "build:css": "stylus style.styl",
+    "build:html": "jade index.jade",
+    "publish": "./publish",
+    "watch": "npm run watch:css & npm run watch:html & wait",
+    "watch:css": "npm run build:css -- -w",
+    "watch:html": "npm run build:html -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madbence/nodebp-spacegame.git"
+  },
+  "author": "Bence Dányi <bence@danyi.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madbence/nodebp-spacegame/issues"
+  },
+  "homepage": "https://github.com/madbence/nodebp-spacegame#readme",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "stylus": "^0.53.0"
+  }
+}
