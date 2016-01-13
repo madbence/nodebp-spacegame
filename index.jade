@@ -8,6 +8,94 @@ html(lang='en')
   body
     #impress
       .step
-        h1 Hello world!
+        h1 spacegame (work in progess)
+        h2 @madbence
+        p.
+          preso not ready yet, animgifs are missing, it's a bit boring
+      .step(data-x=1500)
+        h1 about the game
+        ul
+          li multiplayer asteroids (without asteroids)
+          li originally a project @BME
+          li experimenting with various cutting-edge technologies
+          li open open source™
+      .step(data-x=1500, data-y=1000)
+        h1 the stack
+        ul
+          li nginx reverse proxy (secure connection provided by @letsencrypt)
+          li koa server
+          li websockets
+          li react + redux spa
+          li everything transpiled with babel
+          li flowtype
+          li travis ci
+      .step(data-x=3000)
+        h1 why javascript?
+        ul
+          li shared code (really!)
+          li ...
+          li ...
+      .step(data-x=3000, data-y=1000)
+        h1 (state, action) -> state
+        ul
+          li immutable
+          li deterministic
+          li no dependencies
+          li static typing
+          li plain objects (easy to serialize)
+          li fast enough
+      .step(data-x=3000, data-y=2000)
+        h1 simulation
+        ul
+          li state has an associated time
+          li action has an associated time
+          li simulate the world between the two points
+          li (high school physics, nothing serious)
+          li evaluate action
+      .step(data-x=4500)
+        h1 the interesting stuff
+        h2 shared state between clients + server
+        ul
+          li distributed database problem:
+          li i needed availability
+          li i needed consistency
+          li i needed partition tolarence (not really a problem here)
+          li ...
+          li well, that's not possible
+      .step(data-x=4500, data-y=1000)
+        h1 relax!
+        ul
+          li i needed availability ("lag" not allowed)
+          li i needed <strong>eventual</strong> consistency (it's fine to diverge)
+          li i needed partition tolarence (not really a problem)
+      .step(data-x=4500, data-y=2000)
+        h1 how it's done (use animation instead of bullet points)
+        ul
+          li user initiates an action ("turn left thruster on!")
+          li execute action on local state
+          li send it to the server (websocket)
+          li execute action on the server
+          li send it to every client
+          li every client executes it on their local state
+      .step(data-x=4500, data-y=3000)
+        h1 deal with inconsistencies (optimistic handling)
+        ul
+          li execution might fail on the server!
+          li rollback state to the last "verified" state
+          li rollback is easy, since state is immutable
+      .step(data-x=7500)
+        h1 todo
+        ul
+          li fix bugs :-(
+          li webgl graphics
+          li user management (somehow that was skipped)
+          li replay/save games
+          li offline games (serviceworker)
+          li try out new technologies
+      .step(data-x=7500, data-y=1000)
+        h1 thanks!
+        h2 questions?
+        h3 https://spacegame.danyi.me
+        h3  ͡° ͜ʖ ͡°
     script(src='impress.js')
     script impress().init()
