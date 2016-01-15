@@ -21,14 +21,23 @@ html(lang='en')
           li open open source™
       .step(data-x=1500, data-y=1000)
         h1 the stack
-        ul
-          li nginx reverse proxy (secure connection provided by @letsencrypt)
-          li koa server (v1)
+        ul.stack
+          li
+            img(src='nginx.svg' style='width: 100px')
+          li koa
           li websockets
-          li react + redux spa
-          li everything transpiled with babel
-          li flowtype
-          li travis ci
+          li
+            img(src='react.svg' style='height: 40px; width: 40px')
+            | react
+          li redux
+          li
+            img(src='babel.svg' style='width: 100px')
+          li
+            img(src='flow.png' style='height: 40px')
+          li
+            img(src='travis.png' style='height: 40px')
+            | travis ci
+          li etc...
       .step(data-x=3000)
         h1 why javascript?
         ul

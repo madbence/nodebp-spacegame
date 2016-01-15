@@ -4,7 +4,7 @@ REMOTE=$(git config --get remote.origin.url)
 
 mkdir dist
 npm run build
-cp *.html *.css *.js *.png *.gif dist
+cp *.html *.css *.js *.png *.gif *.svg dist
 cd dist
 git init
 git remote add origin $REMOTE
