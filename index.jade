@@ -36,6 +36,20 @@ html(lang='en')
             img(src='travis.png' style='height: 40px')
             | travis ci
           li etc...
+      .step(data-x=1150, data-y=1050, data-scale=0.1)
+        pre.
+          export default props => (
+            &lt;div>
+              &lt;h2>Stateless components!&lt;/h2>
+              &lt;h3>{props.subtitle}&lt;/h3>
+            &lt;/div>
+          );
+      .step(data-x=1150, data-y=1125, data-scale=0.1)
+        pre.
+          function square(x: number) {
+            return x * x;
+          }
+        p.left superior type inference & error messages!
       .step(data-x=3000)
         h1 why javascript?
         ul
