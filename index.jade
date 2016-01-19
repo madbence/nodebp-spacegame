@@ -57,14 +57,14 @@ html(lang='en')
           li ...
           li ...
       .step(data-x=3000, data-y=1000)
-        h1 (state, action) → state
+        h1 redux is about: (state, action) → state
         ul
-          li immutable
-          li deterministic
-          li no dependencies
-          li static typing
-          li plain objects (easy to serialize)
-          li fast enough
+          li immutable → easy change detection
+          li deterministic → for replication
+          li no dependencies → for testing
+          li static typing → to avoid bugs early
+          li plain objects → easy serialization
+          li (immutable.js or mori)
       .step(data-x=3000, data-y=2000)
         h1 simulation
         ul
