@@ -90,8 +90,11 @@ html(lang='en')
           li i needed availability ("lag" not allowed)
           li i needed <strong>eventual</strong> consistency (it's fine to diverge)
           li i needed partition tolarence (not really a problem)
-      .step(data-x=4500, data-y=2000)
-        h1 how it's done (use animation instead of bullet points)
+      .step.non-present-hide(data-x=4500, data-y=2000)
+        h1 how does it work?
+        img(src='explain.gif', style='width: 90%')
+      .step.non-present-hide(data-x=4500, data-y=2000)
+        h1 how does it work?
         ul
           li user initiates an action ("turn left thruster on!")
           li execute action on local state
