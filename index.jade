@@ -57,6 +57,12 @@ html(lang='en')
           li ...
           li ...
       .step(data-x=3000, data-y=1000)
+        h1 before redux: about reduce
+        pre.
+          [1, 2, 3].reduce(<span class='highlight'>f</span>, i) == <span class='highlight'>f</span>(<span class='highlight'>f</span>(<span class='highlight'>f</span>(i, 1), 2), 3)
+
+          currentState == f(f(f(initialState, <span class='highlight-2'>a1</span>), <span class='highlight-2'>a2</span>), <span class='highlight-2'>a3</span>)
+      .step(data-x=3000, data-y=2000)
         h1 redux is about: (state, action) → state
         ul
           li immutable → easy change detection
@@ -65,7 +71,7 @@ html(lang='en')
           li static typing → to avoid bugs early
           li plain objects → easy serialization
           li (immutable.js or mori)
-      .step(data-x=3000, data-y=2000)
+      .step(data-x=3000, data-y=3000)
         h1 simulation
         ul
           li state has an associated time
