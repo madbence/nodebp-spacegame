@@ -75,14 +75,9 @@ html(lang='en')
           li evaluate action
       .step(data-x=4500)
         h1 the interesting stuff
-        h2 shared state between clients ↔ server
-        ul
-          li distributed database problem:
-          li i needed availability
-          li i needed consistency
-          li i needed partition tolarence (not really a problem here)
-          li ...
-          li well, that's not possible
+        h2 replicate state between clients ↔ server
+        p
+          img(src='cap.svg' style='height: 500px')
       .step(data-x=4500, data-y=1000)
         h1 relax!
         ul
