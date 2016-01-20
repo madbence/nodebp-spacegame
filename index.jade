@@ -75,12 +75,7 @@ html(lang='en')
           li fast (faster: immutable.js & mori)
       .step(data-x=3000, data-y=3000)
         h1 simulation
-        ul
-          li state has an associated time
-          li action has an associated time
-          li simulate the world between the two points
-          li (high school physics, nothing serious)
-          li evaluate action
+        include sim.jade
       .step(data-x=4500)
         h1 the interesting stuff
         h2 replicate state between clients ↔ server
