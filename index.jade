@@ -100,13 +100,7 @@ html(lang='en')
         img(src='explain.gif', style='width: 90%')
       .step.non-present-hide(data-x=4500, data-y=2000)
         h1 how does it work?
-        ul
-          li user initiates an action ("turn left thruster on!")
-          li execute action on local state
-          li send it to the server (websocket)
-          li execute action on the server
-          li send it to every client
-          li every client executes it on their local state
+        include comm.jade
       .step(data-x=4500, data-y=3000)
         h1 deal with inconsistencies (optimistic handling)
         ul
