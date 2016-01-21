@@ -1,0 +1,77 @@
+
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
+@font-face {
+  font-family: Iosevka;
+  src: url("http://be5invis.github.io/Iosevka/iosevka-regular.woff");
+}
+body {
+  background: radial-gradient(ellipse at center, #fff 0%, #f6f6f6 47%, #cfcfcf 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: 'Old Standard TT', serif;
+  margin-bottom: 1em;
+}
+body {
+  color: #444;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+}
+.step {
+  width: 1000px;
+  text-align: center;
+  transition: opacity 0.5s;
+}
+ul {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+li {
+  padding: 10px 0;
+}
+pre {
+  font-family: Iosevka, monospace;
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+pre .highlight {
+  color: #e44;
+}
+pre .highlight-2 {
+  color: #44a;
+}
+code {
+  font-family: Iosevka, monospace;
+}
+.future.future-hide {
+  opacity: 0;
+}
+.stack li {
+  display: inline-block;
+  width: 33%;
+  list-style: disc;
+  text-align: center;
+}
+.stack img {
+  margin-right: 10px;
+}
+.left {
+  text-align: left;
+}
+.past.non-present-hide,
+.future.non-present-hide {
+  opacity: 0;
+}
