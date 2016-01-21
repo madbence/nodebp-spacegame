@@ -101,6 +101,8 @@ html(lang='en')
       .step.non-present-hide(data-x=4500, data-y=2000)
         h1 how does it work?
         include comm.jade
+      .step.non-present-hide(data-x=4500, data-y=3000, style='z-index: 2')
+        img(src='rollback.gif', style='width: 800px')
       .step(data-x=4500, data-y=3000)
         h1 deal with inconsistencies (optimistic handling)
         ul
